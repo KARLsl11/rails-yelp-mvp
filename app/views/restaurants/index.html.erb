@@ -1,0 +1,15 @@
+<div class = "container" >
+<h2>Welcome to the restaurant diirectory</h2>
+  <ul>
+    <% @restaurants.each do |restaurant| %>
+    <li> <%= link_to restaurant.name, restaurant %></li>
+  </ul>
+  <% end %>
+
+ <hr>
+
+  <%= link_to new_restaurant_path do %>
+    <i class="fa-solid fa-plus"></i> Add a new restaurant
+  <% end %>
+
+</div>
